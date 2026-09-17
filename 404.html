@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | LASTSEEN</title>
+<meta name="description" content="This LASTSEEN page could not be found. Return home for game information, support and privacy details.">
+<meta name="theme-color" content="#070B14">
+<base href="./">
+<script>
+  const parts = location.pathname.split('/').filter(Boolean);
+  const project = parts.indexOf('lastseen-site');
+  const directories = parts.length - (location.pathname.endsWith('/') ? 0 : 1);
+  const depth = Math.max(0, directories - (project < 0 ? 0 : project + 1));
+  document.querySelector('base').setAttribute('href', '../'.repeat(depth) || './');
+  document.addEventListener('DOMContentLoaded', () => {
+    const current = parts.slice(project < 0 ? 0 : project + 1).join('/');
+    const suffix = location.pathname.endsWith('/') ? '/' : '';
+    document.querySelector('.skip-link').setAttribute('href', current + suffix + location.search + '#main');
+  });
+</script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2080%2080%22%3E%3Crect%20width%3D%2280%22%20height%3D%2280%22%20rx%3D%2220%22%20fill%3D%22%23070B14%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M40%2017A27%2027%200%201%201%2022%2061%22%20stroke%3D%22%2338E1FF%22%20stroke-width%3D%226%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M26%2018A38%2038%200%200%200%2012%2048%22%20stroke%3D%22%2338E1FF%22%20stroke-width%3D%226%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M14%209A51%2051%200%200%200%203%2028%22%20stroke%3D%22%23FFB03B%22%20stroke-width%3D%226%22%2F%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2249%22%20cy%3D%2236%22%20r%3D%2210%22%20fill%3D%22%2338E1FF%22%20stroke%3D%22none%22%2F%3E%0A%20%20%3C%2Fg%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="LASTSEEN home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" aria-hidden="true" focusable="false"><g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 17A27 27 0 1 1 22 61" stroke="#38E1FF" stroke-width="6"/>
+    <path d="M26 18A38 38 0 0 0 12 48" stroke="#38E1FF" stroke-width="6"/>
+    <path d="M14 9A51 51 0 0 0 3 28" stroke="#FFB03B" stroke-width="6"/>
+    <circle cx="49" cy="36" r="10" fill="#38E1FF" stroke="none"/>
+  </g></svg><span>LASTSEEN</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html#support">Support</a>
+      <a href="privacy/index.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="main" tabindex="-1">
+<section class="not-found"><p class="code" aria-hidden="true">404</p><h1>This page slipped away.</h1><p>We couldn’t find that page. Head home to find game information and support.</p><a class="button-link" href="index.html">Back to LASTSEEN</a></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>LASTSEEN. Hide. Hunt. Ping.</p>
+    <nav class="site-nav" aria-label="Footer navigation">
+      <a href="index.html#support">Support</a>
+      <a href="privacy/index.html">Privacy policy</a>
+      <a href="delete-account/index.html">Delete account</a>
+      <a href="mailto:dominik@fersion.at?subject=LASTSEEN">Contact</a>
+    </nav>
+    <p>© 2026 Dominik Fers, Austria.</p>
+  </div>
+</footer>
+</body>
+</html>
