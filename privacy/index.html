@@ -30,7 +30,7 @@
 <nav class="language-nav" aria-label="Policy language"><a href="#english" lang="en" hreflang="en">English</a><a href="#deutsch" lang="de" hreflang="de">Deutsch</a></nav>
 <section class="document" id="english" lang="en" aria-label="Privacy policy in English">
 <h1>LASTSEEN Privacy Policy</h1>
-<p class="effective">Effective date: 17 September 2026</p>
+<p class="effective">Effective date: 21 September 2026</p>
 <p>LASTSEEN is a real-world hide-and-seek game. It only works with location data, so this page explains exactly what is collected, who can see it, and when it is deleted.</p>
 <p><strong>Controller:</strong> Dominik Fers, Austria. Contact: <a href="mailto:dominik@fersion.at?subject=LASTSEEN">dominik@fersion.at</a></p>
 <h2>The short version</h2>
@@ -54,6 +54,7 @@
 <tr><th scope="row">Precise location during a match</th><td>Live team map, zone and capture checks, pings</td><td>Overwritten continuously; deleted when the match ends, at the latest after 24 hours</td></tr>
 <tr><th scope="row">Ping snapshots of Hiders (position, accuracy, time)</th><td>The core game mechanic; visible to all players of that game</td><td>Deleted with the game, at the latest after 90 days</td></tr>
 <tr><th scope="row">Match data (teams, captures, distance travelled, warnings)</th><td>Results screen and match history</td><td>Deleted with the game, at the latest after 90 days</td></tr>
+<tr><th scope="row">Lifetime statistics (matches played, wins, matches per team, captures made, times captured, time survived as a Hider, total distance, date last played)</th><td>Your profile. Visible only to you; they contain no positions</td><td>You delete your account; guest accounts not used for 90 days are deleted automatically</td></tr>
 <tr><th scope="row">Push notification token (only if notifications are on)</th><td>Match alerts such as capture requests</td><td>You turn notifications off or delete your account</td></tr>
 <tr><th scope="row">Technical server logs (IP address, time, request)</th><td>Security and troubleshooting by our hosting provider</td><td>According to the provider's log retention, usually a few days</td></tr>
 </tbody></table></div>
@@ -63,6 +64,7 @@
 <h2>Who receives data</h2>
 <ul>
 <li><strong>Other players of your game:</strong> nickname, team, status, pings, results. Teammates also see your live position during the match.</li>
+<li><strong>Players you finished a match with in the last 30 days:</strong> while you host an open lobby, they see its name, your nickname and avatar and how many players are in it, and can join it without the code. They do not see the code, the zone or who else is in it.</li>
 <li><strong>Supabase</strong> (database, authentication, realtime; servers in the EU, Ireland) as our processor.</li>
 <li><strong>Expo and Apple / Google push services</strong> deliver notifications if you enabled them.</li>
 <li><strong>OpenFreeMap</strong> serves the map tiles and <strong>OpenStreetMap Nominatim</strong> answers place searches you type; both receive your IP address and the requested map area or search text, not your game data.</li>
@@ -71,7 +73,7 @@
 <h2>Legal bases (GDPR)</h2>
 <p>Running the game you asked for (Art. 6(1)(b)); your consent for location and notifications, given through the system permission dialogs and revocable in the system settings (Art. 6(1)(a)); our legitimate interest in preventing cheating and abuse (Art. 6(1)(f)).</p>
 <h2>Your rights</h2>
-<p>You can access, correct, export or delete your data and object to processing. The fastest way to delete everything is <strong>Settings → Delete account</strong> in the app: it removes your account, nickname, email and push token immediately and replaces your name in other players' match history with &quot;Deleted player&quot;. For anything else write to <a href="mailto:dominik@fersion.at?subject=LASTSEEN">dominik@fersion.at</a>. You can also complain to a data protection authority, in Austria the Datenschutzbehörde (dsb.gv.at).</p>
+<p>You can access, correct, export or delete your data and object to processing. The fastest way to delete everything is <strong>Settings → Delete account</strong> in the app: it removes your account, nickname, email, push token and lifetime statistics immediately and replaces your name in other players' match history with &quot;Deleted player&quot;. For anything else write to <a href="mailto:dominik@fersion.at?subject=LASTSEEN">dominik@fersion.at</a>. You can also complain to a data protection authority, in Austria the Datenschutzbehörde (dsb.gv.at).</p>
 <h2>Children</h2>
 <p>LASTSEEN is not directed at children under 14. Younger players need a parent or guardian who agrees to the use of location data and plays along responsibly.</p>
 <h2>Changes</h2>
@@ -79,7 +81,7 @@
 </section>
 <section class="document" id="deutsch" lang="de" aria-label="Datenschutzerklärung auf Deutsch">
 <h2>LASTSEEN Datenschutzerklärung</h2>
-<p class="effective">Gültig ab: 17. September 2026</p>
+<p class="effective">Gültig ab: 21. September 2026</p>
 <p>LASTSEEN ist ein Versteckspiel in der echten Welt. Es funktioniert nur mit Standortdaten. Diese Seite erklärt genau, was erhoben wird, wer es sieht und wann es gelöscht wird.</p>
 <p><strong>Verantwortlicher:</strong> Dominik Fers, Österreich. Kontakt: <a href="mailto:dominik@fersion.at?subject=LASTSEEN">dominik@fersion.at</a></p>
 <h3>Kurzfassung</h3>
@@ -103,6 +105,7 @@
 <tr><th scope="row">Genauer Standort während eines Matches</th><td>Live-Teamkarte, Zonen- und Capture-Prüfung, Pings</td><td>Laufend überschrieben; gelöscht beim Matchende, spätestens nach 24 Stunden</td></tr>
 <tr><th scope="row">Ping-Momentaufnahmen der Hider (Position, Genauigkeit, Zeit)</th><td>Kernmechanik des Spiels; sichtbar für alle Spieler dieses Spiels</td><td>Mit dem Spiel gelöscht, spätestens nach 90 Tagen</td></tr>
 <tr><th scope="row">Matchdaten (Teams, Captures, zurückgelegte Distanz, Warnungen)</th><td>Ergebnisbildschirm und Spielverlauf</td><td>Mit dem Spiel gelöscht, spätestens nach 90 Tagen</td></tr>
+<tr><th scope="row">Lebenszeit-Statistik (gespielte Matches, Siege, Matches je Team, eigene Captures, wie oft gefangen, Überlebenszeit als Hider, Gesamtdistanz, zuletzt gespielt)</th><td>Dein Profil. Nur für dich sichtbar; enthält keine Positionen</td><td>Du dein Konto löschst; Gastkonten, die 90 Tage nicht genutzt wurden, werden automatisch gelöscht</td></tr>
 <tr><th scope="row">Push-Token (nur bei aktivierten Mitteilungen)</th><td>Match-Hinweise wie Capture-Anfragen</td><td>Du Mitteilungen abschaltest oder dein Konto löschst</td></tr>
 <tr><th scope="row">Technische Server-Logs (IP-Adresse, Zeit, Anfrage)</th><td>Sicherheit und Fehlersuche beim Hosting-Anbieter</td><td>Gemäß Log-Aufbewahrung des Anbieters, meist wenige Tage</td></tr>
 </tbody></table></div>
@@ -112,6 +115,7 @@
 <h3>Wer Daten erhält</h3>
 <ul>
 <li><strong>Andere Spieler deines Spiels:</strong> Nickname, Team, Status, Pings, Ergebnisse. Teammitglieder sehen während des Matches zusätzlich deine Live-Position.</li>
+<li><strong>Spieler, mit denen du in den letzten 30 Tagen ein Match beendet hast:</strong> Solange du eine offene Lobby hostest, sehen sie deren Namen, deinen Nickname und Avatar und wie viele Spieler darin sind, und können ohne Code beitreten. Code, Zone und die anderen Spieler sehen sie nicht.</li>
 <li><strong>Supabase</strong> (Datenbank, Anmeldung, Echtzeit; Server in der EU, Irland) als Auftragsverarbeiter.</li>
 <li><strong>Expo sowie Apple / Google Push-Dienste</strong> stellen Mitteilungen zu, wenn du sie aktiviert hast.</li>
 <li><strong>OpenFreeMap</strong> liefert die Kartenkacheln und <strong>OpenStreetMap Nominatim</strong> beantwortet Ortssuchen, die du eintippst; beide erhalten deine IP-Adresse und den angefragten Kartenausschnitt bzw. Suchtext, aber keine Spieldaten.</li>
@@ -120,7 +124,7 @@
 <h3>Rechtsgrundlagen (DSGVO)</h3>
 <p>Durchführung des von dir gewünschten Spiels (Art. 6 Abs. 1 lit. b); deine Einwilligung für Standort und Mitteilungen über die Systemdialoge, jederzeit in den Systemeinstellungen widerrufbar (Art. 6 Abs. 1 lit. a); unser berechtigtes Interesse an der Verhinderung von Betrug und Missbrauch (Art. 6 Abs. 1 lit. f).</p>
 <h3>Deine Rechte</h3>
-<p>Du hast das Recht auf Auskunft, Berichtigung, Datenübertragbarkeit, Löschung und Widerspruch. Am schnellsten löschst du alles über <strong>Einstellungen → Konto löschen</strong> in der App: Konto, Nickname, E-Mail und Push-Token werden sofort entfernt, dein Name im Spielverlauf anderer Spieler wird durch „Deleted player“ ersetzt. Für alles andere schreib an <a href="mailto:dominik@fersion.at?subject=LASTSEEN">dominik@fersion.at</a>. Du kannst dich außerdem bei einer Datenschutzbehörde beschweren, in Österreich bei der Datenschutzbehörde (dsb.gv.at).</p>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Datenübertragbarkeit, Löschung und Widerspruch. Am schnellsten löschst du alles über <strong>Einstellungen → Konto löschen</strong> in der App: Konto, Nickname, E-Mail, Push-Token und Lebenszeit-Statistik werden sofort entfernt, dein Name im Spielverlauf anderer Spieler wird durch „Deleted player“ ersetzt. Für alles andere schreib an <a href="mailto:dominik@fersion.at?subject=LASTSEEN">dominik@fersion.at</a>. Du kannst dich außerdem bei einer Datenschutzbehörde beschweren, in Österreich bei der Datenschutzbehörde (dsb.gv.at).</p>
 <h3>Kinder</h3>
 <p>LASTSEEN richtet sich nicht an Kinder unter 14 Jahren. Jüngere Spieler brauchen eine erziehungsberechtigte Person, die der Nutzung von Standortdaten zustimmt und verantwortungsvoll mitspielt.</p>
 <h3>Änderungen</h3>
